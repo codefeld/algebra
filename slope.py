@@ -10,7 +10,7 @@ def find_y_int(x1, y1, x2, y2):
 	return b
 
 if __name__ == "__main__":
-	p1 = [3, 18]
-	p2 = [1, 14]
+	p1 = [0, 10]
+	p2 = [5, 35]
 	print("slope: %s" % find_slope(p1[0], p1[1], p2[0], p2[1]))
 	print("y-intercept: %s" % find_y_int(p1[0], p1[1], p2[0], p2[1]))
