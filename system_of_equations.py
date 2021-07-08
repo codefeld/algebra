@@ -1,6 +1,6 @@
 import math
 
-def solve_elimination(a, b, c, d, e, f):
+def intersect(a, b, c, d, e, f):
 	'''ax + by = c, dx + ey = f'''
 	# 1. Multiply the first equation by d and the second equation by -a
 	#    This will eliminate x when we add the equations.
@@ -36,13 +36,16 @@ def _print_solution(x, y, e):
 
 if __name__ == "__main__":
 	print("\n20x - 5y = 5\n4x - y = 1")
-	x, y, e = solve_elimination(20, -5, 5, 4, -1, 1)
+	x, y, e = intersect(20, -5, 5, 4, -1, 1)
 	_print_solution(x, y, e)
 
 	print("\n5x - y = 2\n5x - y = -2")
-	x, y, e = solve_elimination(5, -1, 2, 5, -1, -2)
+	x, y, e = intersect(5, -1, 2, 5, -1, -2)
 	_print_solution(x, y, e)
 
 	print("\n6x + 3y = 9\n6x + y = 9")
-	x, y, e = solve_elimination(6, 3, 9, 6, 1, 9)
+	x, y, e = intersect(6, 3, 9, 6, 1, 9)
+	_print_solution(x, y, e)
+
+	x, y, e = intersect(-4, 1, 6, -8, 1, 2)
 	_print_solution(x, y, e)
