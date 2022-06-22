@@ -1,6 +1,9 @@
 import math
 
 def i_power(exponent):
+	"""
+	Simplify an exponent of i
+	"""
 	x = math.remainder(exponent, 4)
 	if x == 0:
 		return 1 + 0j
